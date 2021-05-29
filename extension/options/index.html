@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitch Follower Count - Options</title>
+    <script src="js/font-awesome-45175a2345.js"></script>
+    <link rel="stylesheet" href="css/bulma-0.9.2-customized.min.css" />
+  </head>
+  <body class="has-background-primary-light" style="height: 100%">
+    <div class="hero-head">
+      <nav class="navbar is-primary">
+        <div class="container">
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a
+                class="navbar-item"
+                href="mailto:aranciro@protonmail.com?subject= CHANGE THIS - [Twitch Follower Count for Firefox]&body=Hi aranciro!"
+              >
+                Contact me
+              </a>
+              <a
+                class="navbar-item"
+                href="https://github.com/aranciro/Twitch-Follower-Count-Firefox/issues"
+              >
+                Report issue
+              </a>
+              <span class="navbar-item">
+                <a
+                  class="button is-primary is-inverted"
+                  href="https://github.com/aranciro/Twitch-Follower-Count-Firefox"
+                >
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>View on Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero is-primary with-navbar">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title">Twitch Follower Count</p>
+          <p class="subtitle">Settings</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half box">
+            <div class="columns">
+              <div class="column is-centered has-text-centered">
+                <p class="subtitle has-text-weight-medium">Basic settings</p>
+              </div>
+            </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-full">
+                <div class="field">
+                  <label class="label has-text-weight-normal">Font-size:</label>
+                  <div class="control">
+                    <div class="select is-primary">
+                      <select id="font-size">
+                        <option value="5">Small</option>
+                        <option value="4" selected>Medium</option>
+                        <option value="3">Large</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-weight-normal">Position:</label>
+                  <div class="control">
+                    <div class="select is-primary">
+                      <select id="position">
+                        <option value="0" selected>Next to channel name</option>
+                        <option value="1">
+                          Left of the follow/squad stream button
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input id="enclose" type="checkbox" />
+                      Parenthesize the follower count
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input id="locale-string" type="checkbox" />
+                      Format the follower count with thousands separator
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-three-quarters">
+                <article
+                  id="message-container"
+                  class="message is-success is-hidden"
+                >
+                  <div id="message" class="message-body"></div>
+                </article>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full has-text-centered">
+                <button
+                  id="save"
+                  class="button is-primary is-light is-rounded has-tooltip-left"
+                  data-tooltip="Prova"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-full has-text-centered">
+                <button
+                  id="default"
+                  class="button is-text is-rounded is-small"
+                  data-tooltip="Prova"
+                >
+                  Reset to default
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

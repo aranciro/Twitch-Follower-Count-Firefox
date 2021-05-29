@@ -1,0 +1,8 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.updating-counter {
+  animation: blinker 1s linear infinite;
+}
