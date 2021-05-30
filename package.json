@@ -1,0 +1,23 @@
+{
+  "name": "twitch-follower-count-firefox",
+  "version": "1.0.0",
+  "description": "Configurable Firefox extension that shows follower count when in a twitch channel page.",
+  "main": "extension/twitch-follower-count.user.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aranciro/Twitch-Follower-Count-Firefox.git"
+  },
+  "author": "aranciro",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/aranciro/Twitch-Follower-Count-Firefox/issues"
+  },
+  "homepage": "https://github.com/aranciro/Twitch-Follower-Count-Firefox#readme"
+}
